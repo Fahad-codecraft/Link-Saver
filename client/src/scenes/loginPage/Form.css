@@ -1,0 +1,10 @@
+.logresbutton {
+    background-image: linear-gradient(to bottom left, #e54d50, #e52b64, #c82f8e, #6F0990);
+	border-radius: 15px;
+	transition: color 0.3s, background-image 0.3s;
+}
+
+.logresbutton:hover{
+    color: white;
+	background-image: linear-gradient(to bottom left, #6F0990, #c82f8e, #e52b64, #e54d50);
+}
