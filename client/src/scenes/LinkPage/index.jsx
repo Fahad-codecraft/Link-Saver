@@ -15,7 +15,7 @@ const LinkPage = () => {
 	const navigate = useNavigate();
 
 	const getLink = async () => {
-		const response = await fetch(`http://localhost:4001/links/${id}`, {
+		const response = await fetch(`https://link-saver-backend.vercel.app/links/${id}`, {
 			method: "GET",
 			headers: { Authorization: `Bearer ${token}` },
 		});
@@ -29,7 +29,7 @@ const LinkPage = () => {
 
 
 	const deleteLink = async () => {
-		await fetch(`http://localhost:4001/links/${id}`, {
+		await fetch(`https://link-saver-backend.vercel.app/links/${id}`, {
 			method: "DELETE",
 			headers: { Authorization: `Bearer ${token}` },
 		});

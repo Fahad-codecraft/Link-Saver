@@ -47,7 +47,7 @@ const Form = () => {
 	const isRegister = pageType === "register";
 
 	const register = async (values, onSubmitProps) => {
-		const savedUserResponse = await fetch("http://localhost:4001/auth/register",
+		const savedUserResponse = await fetch("https://link-saver-backend.vercel.app/auth/register",
 			{
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
@@ -63,7 +63,7 @@ const Form = () => {
 	};
 
 	const login = async (values, onSubmitProps) => {
-		const loggedInResponse = await fetch("http://localhost:4001/auth/login",
+		const loggedInResponse = await fetch("https://link-saver-backend.vercel.app/auth/login",
 			{
 				method: "POST",
 				headers: { "Content-Type": "application/json" },

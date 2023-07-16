@@ -17,7 +17,7 @@ const LinksWidget = ({ searchQuery }) => {
   const { refresh } = useContext(LinkContext);
 
   const getLinks = async () => {
-    const response = await fetch("http://localhost:4001/links", {
+    const response = await fetch("https://link-saver-backend.vercel.app/links", {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -34,7 +34,7 @@ const LinksWidget = ({ searchQuery }) => {
   };
 
   const deleteLink = async (_id) => {
-    await fetch(`http://localhost:4001/links/${_id}`, {
+    await fetch(`https://link-saver-backend.vercel.app/links/${_id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     });

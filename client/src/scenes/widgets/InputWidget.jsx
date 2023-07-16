@@ -22,7 +22,7 @@ const PutLinkWidget = () => {
       link: link,
     };
 
-    const response = await fetch(`http://localhost:4001/links`, {
+    const response = await fetch(`https://link-saver-backend.vercel.app/links`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
